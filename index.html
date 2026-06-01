@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="M. Subhi Abo Rdan — MIT EECS/Physics, FPGA engineering, accelerated computing, quantum information, and systems." />
+  <title>M. Subhi Abo Rdan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="site-header">
+    <a class="brand" href="#top">MSAR</a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">MIT EECS + Physics · FPGA / Accelerated Computing</p>
+        <h1>M. Subhi Abo Rdan</h1>
+        <p class="lead">
+          I build high-performance hardware and systems at the boundary of FPGA engineering,
+          computer architecture, optical modeling, networking, and quantum information.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="Subhi_Resume_Full_May26.pdf">Resume</a>
+          <a class="button" href="https://github.com/msubhia" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="button" href="mailto:msubhi_a@mit.edu">Email</a>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="Profile summary">
+        <div class="card-glow"></div>
+        <p class="mono">CURRENTLY</p>
+        <h2>MIT MEng in EECS</h2>
+        <p>Incoming FPGA Engineering Intern at Optiver. Previously Apple Silicon Prototyping and MIT STAR Lab.</p>
+        <div class="stat-grid">
+          <div><strong>360×</strong><span>2D FFT speedup</span></div>
+          <div><strong>500×</strong><span>ASM speedup</span></div>
+          <div><strong>100G</strong><span>UDP engine</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section split">
+      <div>
+        <p class="eyebrow">Focus</p>
+        <h2>Hardware for things that need to be fast.</h2>
+      </div>
+      <p>
+        My work spans FPGA prototyping, HLS accelerators, SmartNIC-style networking, distributed systems,
+        GPU computing, and quantum error correction tooling. I like projects where performance comes from
+        understanding the whole stack: math, architecture, software, and physical hardware.
+      </p>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Experience</p>
+        <h2>Research & work</h2>
+      </div>
+      <div class="timeline">
+        <article class="item">
+          <div class="item-meta">Jun 2026 – Aug 2026 · Chicago</div>
+          <div>
+            <h3>Optiver · FPGA Engineering Intern</h3>
+            <p>Incoming high-frequency trading FPGA engineering intern.</p>
+          </div>
+        </article>
+        <article class="item">
+          <div class="item-meta">May 2025 – Aug 2025 · Cupertino</div>
+          <div>
+            <h3>Apple · Silicon Prototyping Engineering Intern</h3>
+            <p>Built a distributed clock monitoring system for multi-board FPGA setups and a cycle-accurate FPGA validation engine using RTL waveform replays.</p>
+          </div>
+        </article>
+        <article class="item">
+          <div class="item-meta">Jun 2024 – Aug 2025 · MIT STAR Lab</div>
+          <div>
+            <h3>Research Assistant · FPGA Engineer</h3>
+            <p>Implemented optical modeling accelerators on AMD Zynq UltraScale+ MPSoC ZCU104 using HLS, XRT, and Vitis, including 2D FFT and Angular Spectrum Method accelerators.</p>
+          </div>
+        </article>
+        <article class="item">
+          <div class="item-meta">Feb 2024 – Jun 2024 · MIT META Lab</div>
+          <div>
+            <h3>Research Assistant</h3>
+            <p>Modeled snap-in dynamics of AFM microcantilevers using finite-difference simulation.</p>
+          </div>
+        </article>
+        <article class="item">
+          <div class="item-meta">Jun 2023 – Sep 2023 · MIT Media Lab</div>
+          <div>
+            <h3>Research Assistant · Signal Kinetics</h3>
+            <p>Simulated underwater imaging with the Jaffe–McGlamery model and developed multi-distance color reconstruction algorithms.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected work</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <p class="mono">Quantum · May 2026</p>
+          <h3>Intermediate-Code Automorphisms</h3>
+          <p>Framework and tooling for dynamically evolving stabilizer-code symmetries in pieceable fault-tolerant quantum computation.</p>
+          <div class="tags"><span>Python</span><span>Stim</span><span>QEC</span></div>
+        </article>
+        <article class="project-card">
+          <p class="mono">Networking · Dec 2025</p>
+          <h3>Near-Memory FPGA 100G UDP Engine</h3>
+          <p>Low-latency, line-rate 100 Gbps UDP offload engine on AMD UltraScale+ RFSoC with pipelined set-associative connection bookkeeping.</p>
+          <div class="tags"><span>FPGA</span><span>100G</span><span>SmartNIC</span></div>
+        </article>
+        <article class="project-card">
+          <p class="mono">Distributed Systems · Apr 2025</p>
+          <h3>Fault-Tolerant Sharded KV Store</h3>
+          <p>Raft-based distributed key-value store with dynamic sharding, reconfiguration, snapshotting, and RPC coordination.</p>
+          <div class="tags"><span>Go</span><span>Raft</span><span>Systems</span></div>
+        </article>
+        <article class="project-card">
+          <p class="mono">FPGA · Dec 2023</p>
+          <h3>FPGA QR-Code Reader</h3>
+          <p>Real-time QR scanner on AMD Urbana FPGA with OV7670 camera and HDMI output; winner of MIT EECS Newton Lab Prize.</p>
+          <div class="tags"><span>SystemVerilog</span><span>Video</span><span>FPGA</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Publications</p>
+        <h2>SPIE Photonics West</h2>
+      </div>
+      <div class="pub-list">
+        <article>
+          <h3>Accelerating high-order wavefront sensing and control algorithms with FPGAs</h3>
+          <p>Proc. SPIE 13627, 2025 · DOI: 10.1117/12.3064675</p>
+        </article>
+        <article>
+          <h3>Demonstrating real-time wavefront sensing and control with space processors</h3>
+          <p>Proc. SPIE 13627, 2025 · DOI: 10.1117/12.3065650</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section skills">
+      <div class="section-heading">
+        <p class="eyebrow">Stack</p>
+        <h2>Skills</h2>
+      </div>
+      <div class="skill-cloud">
+        <span>C/C++</span><span>SystemVerilog</span><span>Python</span><span>Go</span><span>CUDA</span><span>TypeScript</span><span>RISC-V</span><span>TCL</span>
+        <span>FPGA Design</span><span>HLS</span><span>Computer Architecture</span><span>Distributed Systems</span><span>Networking</span><span>SmartNICs</span><span>Quantum Error Correction</span>
+        <span>Vivado</span><span>Vitis</span><span>XRT</span><span>ProtoCompiler</span><span>Cocotb</span><span>Stim</span><span>Linux</span>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <p class="eyebrow">Contact</p>
+      <h2>Let’s build something fast.</h2>
+      <p>Email me at <a href="mailto:msubhi_a@mit.edu">msubhi_a@mit.edu</a> or find me on <a href="https://github.com/msubhia" target="_blank" rel="noreferrer">GitHub</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> M. Subhi Abo Rdan</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
