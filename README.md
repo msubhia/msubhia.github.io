@@ -1,24 +1,30 @@
 # Personal Website — M. Subhi Abo Rdan
 
-Static personal website ready for GitHub Pages.
+Static portfolio site for GitHub Pages.
+
+## Files
+
+- `index.html` — main website
+- `styles.css` — theme and layout
+- `script.js` — project expansion, animations, theme switcher
+- `assets/physics-wave.png` — background visual from the provided image
+- `assets/*.svg` — company/lab logos
+- `Subhi_Resume_Full_May26.pdf` — resume
 
 ## Local preview
-
-Open `index.html` in your browser, or run:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then visit `http://localhost:8000`.
+Then open `http://localhost:8000`.
 
-## Deploy on GitHub Pages
+## Photo
 
-1. Create a new GitHub repository, for example `msubhia.github.io`.
-2. Upload these files to the repository root.
-3. Go to **Settings → Pages**.
-4. Set source to **Deploy from a branch**.
-5. Select branch `main`, folder `/root`, then save.
-6. Your site should appear at `https://msubhia.github.io`.
+Replace the hero photo placeholder with an image by editing the `.portrait-placeholder` block in `index.html`, or add an image tag such as:
 
-For a project repo instead of a user site, use any repo name and GitHub Pages will publish under `https://msubhia.github.io/<repo-name>/`.
+```html
+<img class="portrait" src="assets/profile.jpg" alt="M. Subhi Abo Rdan portrait">
+```
+
+and place `profile.jpg` inside `assets/`.

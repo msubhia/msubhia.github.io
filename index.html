@@ -3,181 +3,645 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="M. Subhi Abo Rdan — MIT EECS/Physics, FPGA engineering, accelerated computing, quantum information, and systems." />
+  <meta name="description" content="M. Subhi Abo Rdan — MIT Physics and Computer Science, FPGA systems, high-performance computing, and quantum information." />
   <title>M. Subhi Abo Rdan</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <div class="noise"></div>
+
+<body data-theme="quantum">
+  <div class="background-art" aria-hidden="true">
+    <div class="bg-teleportation">
+      <svg viewBox="0 0 520 190" aria-hidden="true">
+        <line x1="30" y1="40" x2="490" y2="40" />
+        <line x1="30" y1="95" x2="490" y2="95" />
+        <line x1="30" y1="150" x2="490" y2="150" />
+
+        <circle cx="105" cy="40" r="6" />
+        <line x1="105" y1="40" x2="105" y2="95" />
+        <circle cx="105" cy="95" r="13" />
+
+        <rect x="155" y="25" width="34" height="30" rx="5" />
+        <text x="172" y="45">H</text>
+
+        <rect x="225" y="25" width="42" height="30" rx="5" />
+        <text x="246" y="45">M</text>
+
+        <rect x="225" y="80" width="42" height="30" rx="5" />
+        <text x="246" y="100">M</text>
+
+        <path d="M267 40 C330 40, 330 150, 395 150" />
+        <path d="M267 95 C350 95, 350 150, 425 150" />
+
+        <rect x="395" y="135" width="34" height="30" rx="5" />
+        <text x="412" y="155">X</text>
+
+        <rect x="445" y="135" width="34" height="30" rx="5" />
+        <text x="462" y="155">Z</text>
+      </svg>
+    </div>
+
+    <div class="bg-blackhole">
+      <svg viewBox="0 0 420 360" aria-hidden="true">
+        <path class="cone" d="M210 40 C150 120, 120 220, 90 330" />
+        <path class="cone" d="M210 40 C270 120, 300 220, 330 330" />
+        <ellipse cx="210" cy="80" rx="55" ry="16" />
+        <ellipse cx="210" cy="190" rx="105" ry="28" />
+        <ellipse cx="210" cy="325" rx="145" ry="38" />
+
+        <line x1="210" y1="35" x2="210" y2="330" />
+        <circle cx="210" cy="85" r="30" />
+        <text x="245" y="90">r = 2M</text>
+        <text x="225" y="45">singularity</text>
+
+        <path d="M60 280 C130 235, 170 180, 195 95" />
+        <path d="M360 280 C290 230, 255 175, 225 95" />
+        <path d="M85 235 C140 205, 178 155, 200 95" />
+      </svg>
+    </div>
+
+    <div class="wave-image wave-image-main"></div>
+    <div class="wave-image wave-image-secondary"></div>
+    <div class="quantum-orb"></div>
+    <div class="chip-trace trace-one"></div>
+    <div class="chip-trace trace-two"></div>
+    <div class="grid"></div>
+    <div class="equation-cloud">
+      <span>S = −Tr(ρ log ρ)</span>
+      <span>∇²φ = 0</span>
+      <span>U = exp(−iHt)</span>
+      <span>Rμν − ½Rgμν = 8πTμν</span>
+      <span>FFT₂(x)</span>
+      <span>H|ψ⟩ = E|ψ⟩</span>
+      <span>∮ E · dl = −dΦ/dt</span>
+      <span>q̇ = f(q, u)</span>
+    </div>
+  </div>
+
   <header class="site-header">
-    <a class="brand" href="#top">MSAR</a>
+    <a class="brand" href="#top"><span>ψ</span> M. Subhi Abo Rdan</a>
+
     <nav class="nav" aria-label="Primary navigation">
+      <a href="#home">Home</a>
+      <a href="#education">Education</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#publications">Publications</a>
-      <a href="#contact">Contact</a>
+      <a href="#honors">Honors</a>
     </nav>
   </header>
 
   <main id="top">
-    <section class="hero section">
+    <section id="home" class="hero section reveal">
       <div class="hero-copy">
-        <p class="eyebrow">MIT EECS + Physics · FPGA / Accelerated Computing</p>
-        <h1>M. Subhi Abo Rdan</h1>
-        <p class="lead">
-          I build high-performance hardware and systems at the boundary of FPGA engineering,
-          computer architecture, optical modeling, networking, and quantum information.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="Subhi_Resume_Full_May26.pdf">Resume</a>
-          <a class="button" href="https://github.com/msubhia" target="_blank" rel="noreferrer">GitHub</a>
-          <a class="button" href="mailto:msubhi_a@mit.edu">Email</a>
+        <p class="eyebrow"> MIT · Physics · FPGA · Quantum Information · High-Performance Computing</p>
+        <h2>M.Subhi  Abo Rdan</h2>
+        <div class="intro-text">
+          <p>
+            I am a Physics and Computer Science student at the Massachusetts Institute of Technology (MIT), interested in high-performance scientific computing, FPGA and GPU acceleration, theoretical physics, and quantum information science.
+          </p>
+          <p>
+            My work spans hardware acceleration, computer architecture, and scientific computing. I have worked on FPGA systems at Apple and MIT STAR Lab, and I am currently interning at Optiver as an FPGA Engineering Intern.
+          </p>
+          <p>
+            For my MEng, I am working with
+            <a href="https://physics.mit.edu/faculty/philip-harris/" target="_blank" rel="noopener noreferrer">Prof. Philip Harris</a>
+            and
+            <a href="https://www.eecs.mit.edu/people/harryzhou/" target="_blank" rel="noopener noreferrer">Prof. Hengyun Zhou</a>
+            on quantum control, quantum error correction, reinforcement learning for quantum systems, and FPGA/GPU acceleration for quantum hardware.
+          </p>
+        </div>
+        <div class="hero-links">
+          <a href="mailto:msubhi_a@mit.edu">Email</a>
+          <a href="https://github.com/msubhia" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/m-subhi-abo-rdan" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="Subhi_Resume_Full_May26.pdf" target="_blank">Resume</a>
         </div>
       </div>
-      <aside class="hero-card" aria-label="Profile summary">
-        <div class="card-glow"></div>
-        <p class="mono">CURRENTLY</p>
-        <h2>MIT MEng in EECS</h2>
-        <p>Incoming FPGA Engineering Intern at Optiver. Previously Apple Silicon Prototyping and MIT STAR Lab.</p>
-        <div class="stat-grid">
-          <div><strong>360×</strong><span>2D FFT speedup</span></div>
-          <div><strong>500×</strong><span>ASM speedup</span></div>
-          <div><strong>100G</strong><span>UDP engine</span></div>
-        </div>
+      <aside class="portrait-panel" aria-label="Portrait">
+        <img
+          src="assets/subhi.jpeg"
+          alt="M. Subhi Abo Rdan"
+          class="portrait-image"
+        />
       </aside>
     </section>
 
-    <section class="section split">
-      <div>
-        <p class="eyebrow">Focus</p>
-        <h2>Hardware for things that need to be fast.</h2>
+    <section id="education" class="section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Education</p>
+        <h2>Massachusetts Institute of Technology</h2>
       </div>
-      <p>
-        My work spans FPGA prototyping, HLS accelerators, SmartNIC-style networking, distributed systems,
-        GPU computing, and quantum error correction tooling. I like projects where performance comes from
-        understanding the whole stack: math, architecture, software, and physical hardware.
-      </p>
+
+      <div class="education-grid">
+        <article class="card degree-card degree-master">
+          <div class="card-meta">June 2027</div>
+          <h3>Master of Engineering in Electrical Engineering and Computer Science</h3>
+        </article>
+
+        <article class="card degree-card">
+          <div class="card-meta">June 2026</div>
+          <h3>Bachelor of Science in Computer Science and Engineering</h3>
+        </article>
+
+        <article class="card degree-card">
+          <div class="card-meta">June 2026</div>
+          <h3>Bachelor of Science in Physics</h3>
+        </article>
+      </div>
+
+      <details class="card coursework-list">
+        <summary>Selected coursework</summary>
+
+        <div class="course-columns">
+          <div>
+            <h4>EECS / Systems</h4>
+            <ul>
+              <li><strong>6.S965</strong><span class="course-name">Digital Systems Laboratory II (FPGAs)</span><span class="grad-badge">Graduate</span></li>
+              <li><strong>6.S894</strong><span class="course-name">Accelerated Computing (GPUs, CUDA)</span><span class="grad-badge">Graduate</span></li>
+              <li><strong>6.5900</strong><span class="course-name">Computer System Architecture</span><span class="grad-badge">Graduate</span></li>
+              <li><strong>6.5840</strong><span class="course-name">Distributed Systems</span><span class="grad-badge">Graduate</span></li>
+              <li><strong>6.1060</strong><span class="course-name">Software Performance Engineering</span></li>
+              <li><strong>6.2050</strong><span class="course-name">Digital Systems Laboratory (FPGAs)</span></li>
+              <li><strong>6.1810</strong><span class="course-name">Operating Systems</span></li>
+              <li><strong>6.1400</strong><span class="course-name">Computability and Complexity Theory</span></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Physics / Theory</h4>
+            <ul>
+              <li><strong>8.371</strong><span class="course-name">Quantum Information Science II</span><span class="grad-badge">Graduate</span></li>
+              <li><strong>8.962</strong><span class="course-name">General Relativity</span><span class="grad-badge">Graduate</span></li>
+              <li><strong>6.2410</strong><span class="course-name">Quantum Engineering Platforms</span></li>
+              <li><strong>8.033</strong><span class="course-name">Relativity</span></li>
+              <li><strong>8.05</strong><span class="course-name">Quantum Physics II</span></li>
+              <li><strong>8.044</strong><span class="course-name">Statistical Mechanics</span></li>
+              <li><strong>8.223</strong><span class="course-name">Advanced Classical Mechanics</span></li>
+              <li><strong>6.3720</strong><span class="course-name">Statistical Data Analysis</span></li>
+            </ul>
+          </div>
+        </div>
+      </details>
     </section>
 
-    <section id="experience" class="section">
+    <section id="experience" class="section reveal">
       <div class="section-heading">
         <p class="eyebrow">Experience</p>
-        <h2>Research & work</h2>
+        <h2>Work and Research</h2>
       </div>
-      <div class="timeline">
-        <article class="item">
-          <div class="item-meta">Jun 2026 – Aug 2026 · Chicago</div>
-          <div>
-            <h3>Optiver · FPGA Engineering Intern</h3>
-            <p>Incoming high-frequency trading FPGA engineering intern.</p>
+
+      <div class="experience-list">
+
+        <details class="experience-card">
+          <summary>
+            <div class="company-logo optiver">
+              <img src="assets/optiverLogo.webp" alt="Optiver logo">
+            </div>
+
+            <div>
+              <p class="date">Summer 2026 · Chicago <span class="status-badge">Current</span></p>
+              <h3>Optiver · FPGA Engineering Intern</h3>
+              <p>Low-latency FPGA systems for high-frequency trading infrastructure.</p>
+            </div>
+
+            <span class="expand-icon">+</span>
+          </summary>
+
+          <div class="experience-details">
+            <ul>
+              <li>Working on hardware acceleration for low-latency trading systems.</li>
+              <li>Focusing on FPGA design, networking, and production-grade infrastructure.</li>
+            </ul>
           </div>
-        </article>
-        <article class="item">
-          <div class="item-meta">May 2025 – Aug 2025 · Cupertino</div>
-          <div>
-            <h3>Apple · Silicon Prototyping Engineering Intern</h3>
-            <p>Built a distributed clock monitoring system for multi-board FPGA setups and a cycle-accurate FPGA validation engine using RTL waveform replays.</p>
+        </details>
+
+        <details class="experience-card">
+          <summary>
+            <div class="company-logo mit">
+              <img src="assets/eecs.png" alt="EECS logo">
+            </div>
+
+            <div>
+              <p class="date">Sep 2024 – Jun 2026 · Cambridge</p>
+              <h3>MIT EECS Department · Teaching Assistant</h3>
+              <p>Teaching computer systems, digital design, and low-level programming courses.</p>
+            </div>
+
+            <span class="expand-icon">+</span>
+          </summary>
+
+          <div class="experience-details">
+            <ul class="teaching-list">
+              <li><strong>Spring 2026</strong> — UTA, 6.1903/6.1904 Introduction to Low-Level Programming in C and Assembly</li>
+              <li><strong>Fall 2025</strong> — Lab Assistant, 6.2050 Digital Systems Laboratory (FPGA Design)</li>
+              <li><strong>Fall 2024</strong> — Lab Assistant, 6.2050 Digital Systems Laboratory (FPGA Design)</li>
+              <li><strong>Spring 2024</strong> — Grader, 8.04 Quantum Physics I</li>
+            </ul>
           </div>
-        </article>
-        <article class="item">
-          <div class="item-meta">Jun 2024 – Aug 2025 · MIT STAR Lab</div>
-          <div>
-            <h3>Research Assistant · FPGA Engineer</h3>
-            <p>Implemented optical modeling accelerators on AMD Zynq UltraScale+ MPSoC ZCU104 using HLS, XRT, and Vitis, including 2D FFT and Angular Spectrum Method accelerators.</p>
+        </details>
+
+        <details class="experience-card">
+          <summary>
+            <div class="company-logo apple">
+              <img src="assets/apple.png" alt="Apple logo">
+            </div>
+
+            <div>
+              <p class="date">Summer 2025 · Cupertino</p>
+              <h3>Apple · Silicon Engineering Group · FPGA Intern</h3>
+              <p>FPGA-based silicon prototyping and validation infrastructure.</p>
+            </div>
+
+            <span class="expand-icon">+</span>
+          </summary>
+
+          <div class="experience-details">
+            <ul>
+              <li>Built a non-invasive distributed clock-monitoring system for Synopsys HAPS multi-board FPGA setups, enabling runtime frequency measurement through a register-mapped UMRBus3 interface.</li>
+              <li>Engineered a cycle-accurate, UVM-style FPGA validation engine using RTL waveform replay to emulate system behavior and enable high-throughput DUT testing.</li>
+              <li>Designed a software/hardware pipeline to parse and compress VCD transition traces, achieving a 220× reduction before FPGA-based DUT execution.</li>
+            </ul>
           </div>
-        </article>
-        <article class="item">
-          <div class="item-meta">Feb 2024 – Jun 2024 · MIT META Lab</div>
-          <div>
-            <h3>Research Assistant</h3>
-            <p>Modeled snap-in dynamics of AFM microcantilevers using finite-difference simulation.</p>
+        </details>
+
+        <details class="experience-card">
+          <summary>
+            <div class="company-logo star">
+              <img src="assets/STARLab_logo.svg" alt="MIT STAR Lab logo">
+            </div>
+
+            <div>
+              <p class="date">Jun 2024–Aug 2025 · Cambridge</p>
+              <h3>MIT STAR Lab · FPGA Research Intern</h3>
+              <p>Optical-modeling FPGA accelerators for high-order wavefront sensing and control.</p>
+            </div>
+
+            <span class="expand-icon">+</span>
+          </summary>
+
+          <div class="experience-details">
+            <ul>
+              <li>Designed and evaluated optical-modeling accelerators for high-order wavefront sensing and control on the AMD Zynq UltraScale+ MPSoC ZCU104 using HLS, Vitis, and XRT.</li>
+              <li>Contributed to first-author SPIE Photonics West 2025 work on accelerating high-order wavefront sensing and control algorithms with FPGAs.</li>
+              <li>Implemented a 2D FFT accelerator with a 360× execution-time improvement over the Arm Cortex-A53 CPU.</li>
+              <li>Developed an Angular Spectrum Method accelerator with XRT C++ host integration, reducing data movement and improving parallelism for a 500× speedup over CPU execution.</li>
+            </ul>
+
+            <a class="repo-badge"
+              href="https://github.com/MIT-STARLab/ZCU104_HOWFSC"
+              target="_blank"
+              rel="noopener noreferrer">
+              GitHub Repository ↗
+            </a>
+            <a class="repo-badge"
+              href="#publications"
+              target="_blank"
+              rel="noopener noreferrer">
+              Papers ↗
+            </a>
           </div>
-        </article>
-        <article class="item">
-          <div class="item-meta">Jun 2023 – Sep 2023 · MIT Media Lab</div>
-          <div>
-            <h3>Research Assistant · Signal Kinetics</h3>
-            <p>Simulated underwater imaging with the Jaffe–McGlamery model and developed multi-distance color reconstruction algorithms.</p>
+        </details>
+
+        <details class="experience-card">
+          <summary>
+            <div class="company-logo mit">
+              <img src="assets/urop.png" alt="MIT logo">
+            </div>
+
+            <div>
+              <p class="date">Jun 2023–Jun 2024 · Cambridge</p>
+              <h3>MIT Undergraduate Research Opportunity Program (UROP)</h3>
+              <p>Research across the MIT Media Lab, META Lab, and Kavli Institute.</p>
+            </div>
+
+            <span class="expand-icon">+</span>
+          </summary>
+
+          <div class="experience-details">
+            <ul>
+
+              <li>
+                <strong>MIT META Lab</strong>
+                <ul>
+                  <li>Developed a physical model to investigate the snap-in dynamics of microcantilevers in Atomic Force Microscopes (AFMs).</li>
+                  <li>Built a finite-difference simulation framework to model nonlinear cantilever dynamics and predict optimal snap-in distance and timing for high-resolution nanoscale measurements.</li>
+                </ul>
+
+                <a class="repo-badge"
+                  href="https://github.com/msubhia/Snap-in"
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  GitHub Repository ↗
+                </a>
+              </li>
+
+              <li>
+                <strong>MIT Media Lab (Signal Kinetics)</strong>
+                <ul>
+                  <li>Developed a physics-based underwater imaging simulator in Python using the Jaffe–McGlamery model to generate realistic underwater scenes and study optical degradation under varying water conditions.</li>
+                  <li>Designed a color-reconstruction algorithm that combines information from multiple monochromatic underwater images captured at different distances to recover accurate color.</li>
+                  <li>Achieved 8.5% color reconstruction error across four distinct water types.</li>
+                </ul>
+              </li>
+
+              <li>
+                <strong>MIT Kavli Institute for Astrophysics and Space Research</strong>
+                <ul>
+                  <li>Analyzed astronomical survey data from NEOWISE to identify transient infrared sources and candidate tidal disruption events (TDEs).</li>
+                  <li>Reduced an initial dataset of approximately 50,000 objects to roughly 200 promising candidates for further astrophysical investigation.</li>
+                </ul>
+              </li>
+
+            </ul>
           </div>
-        </article>
+        </details>
+
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="projects" class="section reveal">
       <div class="section-heading">
         <p class="eyebrow">Projects</p>
-        <h2>Selected work</h2>
+        <h2>Projects</h2>
       </div>
+
       <div class="project-grid">
+
         <article class="project-card">
-          <p class="mono">Quantum · May 2026</p>
-          <h3>Intermediate-Code Automorphisms</h3>
-          <p>Framework and tooling for dynamically evolving stabilizer-code symmetries in pieceable fault-tolerant quantum computation.</p>
-          <div class="tags"><span>Python</span><span>Stim</span><span>QEC</span></div>
+          <button class="project-toggle" aria-expanded="false">
+            <span class="project-index">
+              <span class="project-kind">Quantum Computing</span>
+              <span class="project-date">May 2026</span>
+            </span>
+
+            <span class="project-title-wrap">
+              <strong>Intermediate-Code Automorphisms in Pieceable Fault-Tolerant Quantum Computation</strong>
+              <em>Tools for studying dynamically evolving stabilizer-code symmetries during pieceable fault-tolerant gate constructions.</em>
+            </span>
+
+            <span class="expand-icon">+</span>
+          </button>
+
+          <div class="project-details" hidden>
+            <ul>
+              <li>Developed a framework for studying dynamically evolving stabilizer-code symmetries during pieceable fault-tolerant quantum gate constructions, focusing on logical Clifford and multi-qubit gate synthesis.</li>
+              <li>Implemented automorphism-search and logical-action verification tools using Python, Stim, and GF(4)/symplectic representations to analyze intermediate quantum error-correcting codes and encoded logical operations.</li>
+            </ul>
+
+            <a class="repo-badge"
+              href="https://github.com/msubhia/intermediate-qec-symmetries/blob/main/8_371_paper_project.pdf"
+              target="_blank"
+              rel="noopener noreferrer">
+              Project Paper ↗
+            </a>
+
+          </div>
         </article>
+
         <article class="project-card">
-          <p class="mono">Networking · Dec 2025</p>
-          <h3>Near-Memory FPGA 100G UDP Engine</h3>
-          <p>Low-latency, line-rate 100 Gbps UDP offload engine on AMD UltraScale+ RFSoC with pipelined set-associative connection bookkeeping.</p>
-          <div class="tags"><span>FPGA</span><span>100G</span><span>SmartNIC</span></div>
+          <button class="project-toggle" aria-expanded="false">
+            <span class="project-index">
+              <span class="project-kind">FPGA Networking</span>
+              <span class="project-date">Dec 2025</span>
+            </span>
+
+            <span class="project-title-wrap">
+              <strong>Near-Memory FPGA 100G-Ethernet UDP Engine</strong>
+              <em>A Low-Latency, Line-Rate UDP Offload Engine for SmartNIC-style Near-Memory Packet Delivery.</em>
+            </span>
+
+            <span class="expand-icon">+</span>
+          </button>
+
+          <div class="project-details" hidden>
+            <ul>
+              <li>Designed and implemented a low-latency, line-rate 100 Gbps UDP offload engine on an AMD UltraScale+ RFSoC operating at 322.22 MHz, including connection bookkeeping via a fully pipelined, set-associative hash table.</li>
+              <li>Built a SmartNIC-style near-memory architecture leveraging AXI HP and cache-coherent ACP ports via DMA, enabling ultra-low-latency packet delivery directly into CPU memory and caches.</li>
+            </ul>
+            <a class="repo-badge"
+              href="https://github.com/msubhia/zeus-udp"
+              target="_blank"
+              rel="noopener noreferrer">
+              Github Repo ↗
+            </a>
+          </div>
         </article>
+
         <article class="project-card">
-          <p class="mono">Distributed Systems · Apr 2025</p>
-          <h3>Fault-Tolerant Sharded KV Store</h3>
-          <p>Raft-based distributed key-value store with dynamic sharding, reconfiguration, snapshotting, and RPC coordination.</p>
-          <div class="tags"><span>Go</span><span>Raft</span><span>Systems</span></div>
+          <button class="project-toggle" aria-expanded="false">
+            <span class="project-index">
+              <span class="project-kind">Distributed Systems</span>
+              <span class="project-date">Apr 2025</span>
+            </span>
+
+            <span class="project-title-wrap">
+              <strong>Fault-Tolerant Sharded Key-Value Store</strong>
+              <em>A Raft-based Distributed Key-Value Dtore with Dynamic Sharding, Reconfiguration, and Snapshotting.</em>
+            </span>
+
+            <span class="expand-icon">+</span>
+          </button>
+
+          <div class="project-details" hidden>
+            <ul>
+              <li>Implemented the Raft distributed-systems consensus algorithm. Integrated snapshotting to compress Raft logs, reducing recovery latency and minimizing storage footprint.</li>
+              <li>Built a distributed, fault-tolerant key-value store with dynamic sharding using Raft, supporting reconfiguration and load balancing via RPC-based coordination among cluster nodes.</li>
+              <li>Built for fault tolerance under leader changes and partial failures.</li>
+            </ul>
+          </div>
         </article>
+
         <article class="project-card">
-          <p class="mono">FPGA · Dec 2023</p>
-          <h3>FPGA QR-Code Reader</h3>
-          <p>Real-time QR scanner on AMD Urbana FPGA with OV7670 camera and HDMI output; winner of MIT EECS Newton Lab Prize.</p>
-          <div class="tags"><span>SystemVerilog</span><span>Video</span><span>FPGA</span></div>
+          <button class="project-toggle" aria-expanded="false">
+            <span class="project-index">
+              <span class="project-kind">FPGA</span>
+              <span class="project-date">Dec 2023</span>
+            </span>
+
+            <span class="project-title-wrap">
+              <strong>FPGA QR-Code Reader</strong>
+              <em>A Real-Time QR Scanner on AMD Spartan 7 FPGA with OV7670 camera input and HDMI output.</em>
+            </span>
+
+            <span class="expand-icon">+</span>
+          </button>
+
+          <div class="project-details" hidden>
+            <ul>
+              <li>Developed a real-time QR code scanner on an AMD Urbana FPGA, integrating an OV7670 camera module and HDMI output; awarded the MIT EECS George C. Newton Laboratory Prize (2024).</li>
+              <li>Implemented image processing pipelines to grayscale, denoise, detect alignment patterns, and decode QR codes as small as 240×240 pixels in under 0.02 seconds.</li>
+            </ul>
+            <a class="repo-badge"
+              href="https://github.com/AyanaAlemayehu/FPGA-QRCode-Reader"
+              target="_blank"
+              rel="noopener noreferrer">
+              Github Repo ↗
+            </a>
+            <a class="repo-badge"
+              href="https://www.youtube.com/watch?v=XbPQgtRze6U"
+              target="_blank"
+              rel="noopener noreferrer">
+              Video Demonstration ↗
+            </a>
+          </div>
         </article>
+
       </div>
     </section>
 
-    <section id="publications" class="section">
+    <section id="publications" class="section reveal">
       <div class="section-heading">
         <p class="eyebrow">Publications</p>
-        <h2>SPIE Photonics West</h2>
+        <h2>Publications</h2>
       </div>
-      <div class="pub-list">
-        <article>
+
+      <div class="publication-list">
+
+        <article class="publication-card">
+          <div class="publication-top">
+            <p class="mono">Proc. SPIE 13627 · 2025</p>
+
+            <a class="paper-badge"
+              href="https://doi.org/10.1117/12.3064675"
+              target="_blank"
+              rel="noreferrer">
+              Read Paper ↗
+            </a>
+          </div>
+
           <h3>Accelerating high-order wavefront sensing and control algorithms with FPGAs</h3>
-          <p>Proc. SPIE 13627, 2025 · DOI: 10.1117/12.3064675</p>
+
+          <p>
+            <span class="author-me">M. Subhi Abo Rdan</span>, N. Belsten, S. Rao, A. W. Taka,
+            B. Eickert, K. Milani, E. S. Douglas,
+            L. Pogorelyuk, K. Cahoy.
+          </p>
         </article>
-        <article>
+
+        <article class="publication-card">
+          <div class="publication-top">
+            <p class="mono">Proc. SPIE 13627 · 2025</p>
+
+            <a class="paper-badge"
+              href="https://doi.org/10.1117/12.3065650"
+              target="_blank"
+              rel="noreferrer">
+              Read Paper ↗
+            </a>
+          </div>
+
           <h3>Demonstrating real-time wavefront sensing and control with space processors</h3>
-          <p>Proc. SPIE 13627, 2025 · DOI: 10.1117/12.3065650</p>
+
+          <p>
+            B. Eickert, N. Belsten, K. Milani, A. Taka,
+            <span class="author-me">M. Subhi Abo Rdan</span>, L. Pogorelyuk,
+            S. Rao, E. S. Douglas, K. Cahoy.
+          </p>
         </article>
+
       </div>
     </section>
 
-    <section class="section skills">
+    <section id="honors" class="section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">Honors</p>
+        <h2>Honors and Awards</h2>
+      </div>
+
+      <div class="honor-grid">
+
+        <article class="honor-card big">
+          <span>MIT EECS · 2024</span>
+          <h3>George C. Newton Laboratory Prize</h3>
+          <p>
+            Awarded for FPGA QR-code Project.
+          </p>
+        </article>
+
+        <article class="honor-card">
+          <span>International Physics Olympiad</span>
+          <h3>🥉 Bronze Medal</h3>
+          <p>2020, 2021</p>
+        </article>
+
+        <article class="honor-card">
+          <span>European Physics Olympiad</span>
+          <h3>🥉 Bronze Medal</h3>
+          <p>2020, 2021</p>
+        </article>
+
+        <article class="honor-card">
+          <span>International Applied Physics Olympiad</span>
+          <h3>🥈 Silver Medal</h3>
+          <p>2021</p>
+        </article>
+
+        <article class="honor-card">
+          <span>Physics Cup</span>
+          <h3>Honorable Mention</h3>
+          <p>2021</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="skills" class="section reveal">
       <div class="section-heading">
         <p class="eyebrow">Stack</p>
         <h2>Skills</h2>
       </div>
-      <div class="skill-cloud">
-        <span>C/C++</span><span>SystemVerilog</span><span>Python</span><span>Go</span><span>CUDA</span><span>TypeScript</span><span>RISC-V</span><span>TCL</span>
-        <span>FPGA Design</span><span>HLS</span><span>Computer Architecture</span><span>Distributed Systems</span><span>Networking</span><span>SmartNICs</span><span>Quantum Error Correction</span>
-        <span>Vivado</span><span>Vitis</span><span>XRT</span><span>ProtoCompiler</span><span>Cocotb</span><span>Stim</span><span>Linux</span>
+
+      <div class="skills-grid">
+
+        <article class="skill-card skill-wide ">
+          <h3>Technical Areas</h3>
+          <div class="skill-tags">
+            <span>FPGA</span>
+            <span>Computer Systems and Architecture</span>
+            <span>Networking & SmartNICs</span>
+            <span>GPU Computing</span>
+            <span>Quantum Computation and Information</span>
+            <span>Quantum Control</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span>C/C++</span>
+            <span>SystemVerilog</span>
+            <span>Python</span>
+            <span>Go</span>
+            <span>TypeScript</span>
+            <span>TCL</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <h3>Tools & Platforms</h3>
+          <div class="skill-tags">
+            <span>Linux</span>
+            <span>Vivado</span>
+            <span>Vitis</span>
+            <span>High-Level Synthesis (HLS)</span>
+            <span>Xilinx Runtime Library (XRT)</span>
+            <span>CUDA</span>
+            <span>Synopsis ProtoCompiler</span>
+            <span>UVM</span>
+            <span>Cocotb</span>
+            <span>Stim</span>
+          </div>
+        </article>
+
       </div>
     </section>
 
-    <section id="contact" class="section contact">
-      <p class="eyebrow">Contact</p>
-      <h2>Let’s build something fast.</h2>
-      <p>Email me at <a href="mailto:msubhi_a@mit.edu">msubhi_a@mit.edu</a> or find me on <a href="https://github.com/msubhia" target="_blank" rel="noreferrer">GitHub</a>.</p>
-    </section>
   </main>
-
-  <footer>
-    <p>© <span id="year"></span> M. Subhi Abo Rdan</p>
-  </footer>
+  <footer class="footer">© <span id="year"></span> M. Subhi Abo Rdan</footer>
   <script src="script.js"></script>
+
 </body>
 </html>
